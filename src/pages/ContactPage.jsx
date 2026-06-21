@@ -212,7 +212,7 @@ const ContactPage = () => {
         image="/cta_collaboration.png"
         personName="Kwesi Kwofie"
         personRole="Lead Consultant"
-        personImage="/expert_1.png"
+        personImage="/Kwesi image.png"
       />
 
     </div>
