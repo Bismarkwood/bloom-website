@@ -60,7 +60,7 @@ const Footer = () => {
             <ul className="footer-links">
               <li><Link to="/" className="footer-link">Home</Link></li>
               <li><Link to="/services" className="footer-link">Services</Link></li>
-              <li><Link to="/projects" className="footer-link">Our Work</Link></li>
+
               <li><Link to="/about" className="footer-link">About Us</Link></li>
               <li><Link to="/contact" className="footer-link">Contact Us</Link></li>
             </ul>
