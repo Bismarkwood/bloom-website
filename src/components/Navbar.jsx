@@ -35,7 +35,6 @@ const Navbar = () => {
   const isDarkHeroPage = 
     location.pathname === '/' ||
     location.pathname === '/services' || 
-    location.pathname.startsWith('/projects') || 
     location.pathname === '/about';
 
   return (
@@ -51,7 +50,6 @@ const Navbar = () => {
         <div className="navbar-links-desktop">
           <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link>
           <Link to="/services" className={location.pathname === '/services' ? 'active' : ''}>Services</Link>
-          <Link to="/projects" className={location.pathname.startsWith('/projects') ? 'active' : ''}>Our Work</Link>
           <Link to="/about" className={location.pathname === '/about' ? 'active' : ''}>About Us</Link>
           <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>Contact Us</Link>
         </div>
@@ -73,7 +71,6 @@ const Navbar = () => {
         <div className="mobile-menu-links">
           <Link to="/" onClick={closeMobileMenu} className={location.pathname === '/' ? 'active' : ''}>Home</Link>
           <Link to="/services" onClick={closeMobileMenu} className={location.pathname === '/services' ? 'active' : ''}>Services</Link>
-          <Link to="/projects" onClick={closeMobileMenu} className={location.pathname.startsWith('/projects') ? 'active' : ''}>Our Work</Link>
           <Link to="/about" onClick={closeMobileMenu} className={location.pathname === '/about' ? 'active' : ''}>About Us</Link>
           <Link to="/contact" onClick={closeMobileMenu} className={location.pathname === '/contact' ? 'active' : ''}>Contact Us</Link>
           <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu} className="mobile-btn-consult">Book a Consultation</a>
